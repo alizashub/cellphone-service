@@ -9,21 +9,23 @@ public class CellPhone {
 
 
     public CellPhone() { // no parameters so it goes to default
-        serialNumber = 023423435;
+        serialNumber = 23423435;
         model = "Nokia 215";
         carrier = "AT&A";
         phoneNumber = "237-847-8123";
         owner = "Aliza";
     }
 
-    public void dail (String phoneNumber){
-        System.out.println(owner + "'s phone is calling" + " " + phoneNumber);
+  //  public void dail (String phoneNumber){
+   //     System.out.println(owner + "'s phone is calling" + " " + phoneNumber);
+
+    public void dial(String phoneNumber) {
+        System.out.println("Calling ... " + phoneNumber);
     }
 
-
-
-
-
+    public void dial(String phoneNumber, String owner) {
+        System.out.println("Unknown number calling ... " + owner);
+    }
 
 
     public int getSerialNumber() {

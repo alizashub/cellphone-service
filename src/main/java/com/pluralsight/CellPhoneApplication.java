@@ -13,11 +13,11 @@ public class CellPhoneApplication {
         calledPhone.setOwner("Alex Johnson");
         callerPhone.setPhoneNumber("934-555-2222");
 
-        display(calledPhone);
-        display(callerPhone);
+//        display(calledPhone);
+//        display(callerPhone);
 
-        callerPhone.dail(calledPhone.getPhoneNumber());
-        calledPhone.dail(callerPhone.getPhoneNumber());
+        callerPhone.dial("123-456-7890");                   // calls first dial
+        calledPhone.dial("987-654-3210", "Unknown Caller"); // calls overloaded dia
     }
 
         public static void display(CellPhone phone) {
